@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Virgin Money</string>
+    <string name="title_activity_fragment_headline">Fragment_Headline</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="sample_title_long">PM Narendra Modi\'s frivolous statements won\'t help create wedge between me and Congress: Amarinder Singh</string>
+    <string name="sample_description">The Sunshine State is home to Mr Trump\'s golf resort, but bigger targets lie elsewhere in the US.</string>
+    <string name="image_desc">Image for the News Post</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="sample_source">BBC News • 1h</string>
+    <string name="title_activity_main">main_activity</string>
+    <string name="job_title">Job Title :  %s</string>
+    <string name="first_name">First Name :  %s</string>
+    <string name="last_name">Last Name :  %s</string>
+    <string name="email">Email :  %s</string>
+    <string name="favourite_color">Favourite Color :  %s</string>
+    <string name="date_view">Created On :  %s</string>
+    <string name="job_id">Job Id : %s</string>
+
+
+
+</resources>

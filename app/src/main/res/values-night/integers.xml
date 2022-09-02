@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <integer name="transition_duration_medium" tools:ignore="MissingDefaultResource">400</integer>
+    <integer name="tag_alt_color" tools:ignore="MissingDefaultResource">1003</integer>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.Headlines.TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="AppTheme.Title" parent="TextAppearance.AppCompat.Title">
+        <item name="android:fontFamily">@font/roboto_slab_bold</item>
+    </style>
+
+    <style name="AppTheme.Headline.Title" parent="TextAppearance.AppCompat.Title"> </style>
+
+    <style name="Theme.TabLayoutNew" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/_15dp</item>
+    </style>
+
+</resources>

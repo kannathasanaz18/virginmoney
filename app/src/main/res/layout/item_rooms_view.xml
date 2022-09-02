@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.example.virginmoney.utils.BindingUtils" />
+        <import type="android.view.View"/>
+        <variable
+            name="view"
+            type="com.example.virginmoney.service.Room"/>
+
+    </data>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        card_view:cardCornerRadius="4dp"
+        android:layout_margin="5dp"
+        card_view:cardElevation="10dp"
+        android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/itemView"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:paddingStart="@dimen/rv_horizontal_offset"
+        android:paddingTop="@dimen/rv_vertical_offset"
+        android:paddingEnd="@dimen/rv_horizontal_offset"
+        android:paddingBottom="@dimen/rv_vertical_offset"
+        tools:context="">
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:minLines="1"
+            android:text="@{view.id}"
+            android:textAppearance="@style/AppTheme.Headline.Title"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/iv_news_image"
+            app:layout_constraintTop_toTopOf="@id/iv_news_image"
+            tools:text="@string/sample_title_long" />
+
+        <ImageView
+            android:id="@+id/iv_news_image"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:visibility="gone"
+            android:contentDescription="@string/image_desc"
+            android:src="@color/cardBackground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_maxOccupancy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@{Integer.toString(view.maxOccupancy)}"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/tv_id"
+            app:layout_constraintTop_toBottomOf="@id/tv_id"
+            tools:text="@string/sample_source" />
+
+        <TextView
+            android:id="@+id/tv_boolean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="14sp"
+            android:text="@{view.isOccupied.toString()}"
+            app:layout_constraintStart_toStartOf="@id/tv_maxOccupancy"
+            app:layout_constraintTop_toBottomOf="@id/tv_maxOccupancy"
+            tools:text="@string/sample_source" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@{view.createdAt}"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/tv_boolean"
+            app:layout_constraintTop_toBottomOf="@id/tv_boolean"
+            tools:text="@string/sample_source" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorTextIconText_gray"
+            app:layout_constraintStart_toStartOf="@id/tv_date"
+            app:layout_constraintTop_toBottomOf="@id/tv_date"
+            android:layout_height="2dp">
+
+
+
+        </View>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</layout>
